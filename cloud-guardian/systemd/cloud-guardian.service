@@ -1,0 +1,9 @@
+[Unit]
+Description=Cloud Guardian System Health Check
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/cloud-guardian/scripts/health-check.sh
+StandardOutput=journal
+StandardError=journal

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Cloud Guardian Health Checks Periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=cloud-guardian.service
+
+[Install]
+WantedBy=timers.target
